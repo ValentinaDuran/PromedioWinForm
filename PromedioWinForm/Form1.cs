@@ -17,10 +17,6 @@ namespace PromedioWinForm
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -35,10 +31,6 @@ namespace PromedioWinForm
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -50,9 +42,10 @@ namespace PromedioWinForm
           
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+   
+        private void btSalir_Click(object sender, EventArgs e)
         {
-
+           lblSalir.Text = "Que tenga un buen día";
         }
     }
 }

@@ -39,6 +39,8 @@ namespace PromedioWinForm
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btSalir = new System.Windows.Forms.Button();
+            this.lblSalir = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNot1
@@ -47,7 +49,6 @@ namespace PromedioWinForm
             this.txtNot1.Name = "txtNot1";
             this.txtNot1.Size = new System.Drawing.Size(100, 20);
             this.txtNot1.TabIndex = 0;
-            this.txtNot1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNot2
             // 
@@ -66,9 +67,10 @@ namespace PromedioWinForm
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(422, 72);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(393, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Promedio";
             // 
@@ -76,7 +78,7 @@ namespace PromedioWinForm
             // 
             this.btCalcular.Location = new System.Drawing.Point(118, 216);
             this.btCalcular.Name = "btCalcular";
-            this.btCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btCalcular.Size = new System.Drawing.Size(80, 30);
             this.btCalcular.TabIndex = 8;
             this.btCalcular.Text = "Calcular";
             this.btCalcular.UseVisualStyleBackColor = true;
@@ -84,9 +86,9 @@ namespace PromedioWinForm
             // 
             // btBorrar
             // 
-            this.btBorrar.Location = new System.Drawing.Point(425, 132);
+            this.btBorrar.Location = new System.Drawing.Point(382, 216);
             this.btBorrar.Name = "btBorrar";
-            this.btBorrar.Size = new System.Drawing.Size(75, 23);
+            this.btBorrar.Size = new System.Drawing.Size(80, 30);
             this.btBorrar.TabIndex = 9;
             this.btBorrar.Text = "Borrar";
             this.btBorrar.UseVisualStyleBackColor = true;
@@ -95,49 +97,72 @@ namespace PromedioWinForm
             // lblProm
             // 
             this.lblProm.AutoSize = true;
-            this.lblProm.Location = new System.Drawing.Point(422, 95);
+            this.lblProm.Location = new System.Drawing.Point(379, 157);
             this.lblProm.Name = "lblProm";
             this.lblProm.Size = new System.Drawing.Size(13, 13);
             this.lblProm.TabIndex = 11;
             this.lblProm.Text = ">";
-            this.lblProm.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(29, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Tercer Nota";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(31, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Segunda Nota";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(31, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Primer Nota";
+            // 
+            // btSalir
+            // 
+            this.btSalir.Location = new System.Drawing.Point(504, 329);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(80, 23);
+            this.btSalir.TabIndex = 12;
+            this.btSalir.Text = "Salir";
+            this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
+            // lblSalir
+            // 
+            this.lblSalir.AutoSize = true;
+            this.lblSalir.Location = new System.Drawing.Point(435, 361);
+            this.lblSalir.Name = "lblSalir";
+            this.lblSalir.Size = new System.Drawing.Size(10, 13);
+            this.lblSalir.TabIndex = 13;
+            this.lblSalir.Text = " ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(611, 450);
+            this.Controls.Add(this.lblSalir);
+            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -150,7 +175,6 @@ namespace PromedioWinForm
             this.Controls.Add(this.txtNot2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +192,8 @@ namespace PromedioWinForm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btSalir;
+        private System.Windows.Forms.Label lblSalir;
     }
 }
 
