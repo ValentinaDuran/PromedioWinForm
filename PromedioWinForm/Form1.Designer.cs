@@ -41,6 +41,7 @@ namespace PromedioWinForm
             this.label1 = new System.Windows.Forms.Label();
             this.btSalir = new System.Windows.Forms.Button();
             this.lblSalir = new System.Windows.Forms.Label();
+            this.listProm = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtNot1
@@ -68,7 +69,7 @@ namespace PromedioWinForm
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(393, 118);
+            this.label4.Location = new System.Drawing.Point(378, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 7;
@@ -90,7 +91,7 @@ namespace PromedioWinForm
             this.btBorrar.Name = "btBorrar";
             this.btBorrar.Size = new System.Drawing.Size(80, 30);
             this.btBorrar.TabIndex = 9;
-            this.btBorrar.Text = "Borrar";
+            this.btBorrar.Text = "Continuar";
             this.btBorrar.UseVisualStyleBackColor = true;
             this.btBorrar.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -138,7 +139,7 @@ namespace PromedioWinForm
             // 
             // btSalir
             // 
-            this.btSalir.Location = new System.Drawing.Point(504, 329);
+            this.btSalir.Location = new System.Drawing.Point(716, 326);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(80, 23);
             this.btSalir.TabIndex = 12;
@@ -155,12 +156,21 @@ namespace PromedioWinForm
             this.lblSalir.TabIndex = 13;
             this.lblSalir.Text = " ";
             // 
+            // listProm
+            // 
+            this.listProm.FormattingEnabled = true;
+            this.listProm.Location = new System.Drawing.Point(631, 72);
+            this.listProm.Name = "listProm";
+            this.listProm.Size = new System.Drawing.Size(179, 121);
+            this.listProm.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(611, 450);
+            this.ClientSize = new System.Drawing.Size(878, 450);
+            this.Controls.Add(this.listProm);
             this.Controls.Add(this.lblSalir);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.label3);
@@ -194,6 +204,7 @@ namespace PromedioWinForm
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Label lblSalir;
+        private System.Windows.Forms.ListBox listProm;
     }
 }
 
