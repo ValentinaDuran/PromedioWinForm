@@ -57,6 +57,5 @@ namespace PromedioWinForm
            lblSalir.Text = "Que tenga un buen día";
         }
 
-        
     }
 }

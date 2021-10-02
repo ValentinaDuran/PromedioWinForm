@@ -139,7 +139,7 @@ namespace PromedioWinForm
             // 
             // btSalir
             // 
-            this.btSalir.Location = new System.Drawing.Point(716, 326);
+            this.btSalir.Location = new System.Drawing.Point(723, 303);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(80, 23);
             this.btSalir.TabIndex = 12;
@@ -150,7 +150,7 @@ namespace PromedioWinForm
             // lblSalir
             // 
             this.lblSalir.AutoSize = true;
-            this.lblSalir.Location = new System.Drawing.Point(435, 361);
+            this.lblSalir.Location = new System.Drawing.Point(720, 365);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(10, 13);
             this.lblSalir.TabIndex = 13;
